@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -225,18 +226,18 @@ export default function About() {
               their dream renovations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/contact"
                 className="bg-blue-900 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-colors"
               >
                 Get Your Free Quote
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/portfolio"
                 className="border-2 border-blue-900 text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-900 hover:text-white transition-colors"
               >
                 View Our Work
-              </a>
+              </Link>
             </div>
           </div>
         </section>
