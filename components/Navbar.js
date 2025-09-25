@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -9,8 +10,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-blue-900">
-              🌙 Moonlit Renovations
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo.jpeg"
+                alt="Moonlit Renovations Logo"
+                width={200}
+                height={60}
+                className="h-14 w-auto object-contain"
+                priority
+              />
             </Link>
           </div>
 

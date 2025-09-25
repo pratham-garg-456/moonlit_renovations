@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -23,6 +24,16 @@ export default function Home() {
         <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white pt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div className="text-center">
+              <div className="mb-8 flex justify-center">
+                <Image
+                  src="/logo.jpeg"
+                  alt="Moonlit Renovations Logo"
+                  width={300}
+                  height={120}
+                  className="h-24 md:h-32 w-auto object-contain drop-shadow-lg"
+                  priority
+                />
+              </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Transform Your Home Under the
                 <span className="text-yellow-400"> Moonlit</span> Sky
